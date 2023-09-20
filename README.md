@@ -3,6 +3,7 @@
 Submitted by: **Jack Camas**
 
 **Worldle** is a puzzle game app where players try to guess the secret 5 letter word.
+
 Time spent: **4** hours spent in total
 
 ## Required Features
