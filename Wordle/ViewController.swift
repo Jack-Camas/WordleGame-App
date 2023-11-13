@@ -30,5 +30,21 @@ class ViewController: UIViewController {
 			  self.boardController.enter(string)
 		  }
 	  }
+	  let rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(didTapSettingsButton))
+	  rightBarButtonItem.tintColor = .white
+	  navigationItem.rightBarButtonItem = rightBarButtonItem
+	  
+	  let leftBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(didTapResetButton))
+	  leftBarButtonItem.tintColor = .white
+	  navigationItem.leftBarButtonItem = leftBarButtonItem
+	  
   }
+	
+	@objc private func didTapSettingsButton() {
+		
+	}
+	
+	@objc private func didTapResetButton() {
+		
+	}
 }
