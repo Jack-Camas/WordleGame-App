@@ -26,7 +26,8 @@ class BoardController: NSObject,
 
   init(collectionView: UICollectionView) {
     self.collectionView = collectionView
-    self.goalWord = WordGenerator.generateRandomWord()!.map { String($0) }
+	let theme = WordTheme(rawValue: "animals")!
+    self.goalWord = WordGenerator.generateRandomWord(with: theme)
     super.init()
     collectionView.delegate = self
     collectionView.dataSource = self
