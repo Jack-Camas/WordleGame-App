@@ -41,7 +41,7 @@ class ViewController: UIViewController {
   }
 	
 	@objc private func didTapSettingsButton() {
-		
+		print("Reset button")
 	}
 	
 	@objc private func didTapResetButton() {

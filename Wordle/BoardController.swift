@@ -19,9 +19,9 @@ class BoardController: NSObject,
   let collectionView: UICollectionView
   let goalWord: [String]
 
-  var numGuesses = 0
+  var numTimesGuessed = 0
   var currRow: Int {
-    return numGuesses / numItemsPerRow
+    return numTimesGuessed / numItemsPerRow
   }
 
   init(collectionView: UICollectionView) {
@@ -34,9 +34,15 @@ class BoardController: NSObject,
   }
 
   // MARK: - Public Methods
+	
+	func resetBoardWithCurrentSettings() {
+		numTimesGuessed = 0
+		collectionView.reloadData()
+	}
+	
   func enter(_ string: String) {
-    guard numGuesses < numItemsPerRow * numRows else { return }
-    let cell = collectionView.cellForItem(at: IndexPath(item: numGuesses, section: 0)) as! LetterCell
+    guard numTimesGuessed < numItemsPerRow * numRows else { return }
+    let cell = collectionView.cellForItem(at: IndexPath(item: numTimesGuessed, section: 0)) as! LetterCell
     cell.set(letter: string)
     UIView.animate(withDuration: 0.1,
                    delay: 0.0,
@@ -50,13 +56,13 @@ class BoardController: NSObject,
     if isFinalGuessInRow() {
       markLettersInRow()
     }
-    numGuesses += 1
+    numTimesGuessed += 1
   }
 
   func deleteLastCharacter() {
-    guard numGuesses > 0 && numGuesses % numItemsPerRow != 0 else { return }
-    let cell = collectionView.cellForItem(at: IndexPath(item: numGuesses - 1, section: 0)) as! LetterCell
-    numGuesses -= 1
+    guard numTimesGuessed > 0 && numTimesGuessed % numItemsPerRow != 0 else { return }
+    let cell = collectionView.cellForItem(at: IndexPath(item: numTimesGuessed - 1, section: 0)) as! LetterCell
+    numTimesGuessed -= 1
 	  cell.clearLetter()
 	  cell.set(style: .initial)
   }

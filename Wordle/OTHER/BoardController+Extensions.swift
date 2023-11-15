@@ -13,10 +13,10 @@ extension BoardController {
   var itemPadding: Double { 3.0 }
   
   func isFinalGuessInRow() -> Bool {
-    if numGuesses == 0 {
+    if numTimesGuessed == 0 {
       return false
     }
-    return (numGuesses + 1) % numItemsPerRow == 0
+    return (numTimesGuessed + 1) % numItemsPerRow == 0
   }
   
   func markLettersInRow() {
