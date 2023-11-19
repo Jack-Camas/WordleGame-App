@@ -41,10 +41,13 @@ class ViewController: UIViewController {
   }
 	
 	@objc private func didTapSettingsButton() {
-		print("Reset button")
+		print("Settings button")
+		let settingsVC = SettingsViewController()
+		navigationController?.pushViewController(settingsVC, animated: true)
+		
 	}
 	
 	@objc private func didTapResetButton() {
-		
+		print("Reset button")
 	}
 }
