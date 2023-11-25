@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048D88A02B3D13EA0045854A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D889F2B3D13EA0045854A /* SettingsViewController.swift */; };
 		991CEC0629999E2A0095F025 /* KeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991CEC0529999E2A0095F025 /* KeyboardCell.swift */; };
 		991CEC0829999ECD0095F025 /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991CEC0729999ECD0095F025 /* KeyboardController.swift */; };
 		9953C05529A40AC700247C5B /* BoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9953C05429A40AC700247C5B /* BoardController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		048D889F2B3D13EA0045854A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		991CEC0529999E2A0095F025 /* KeyboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCell.swift; sourceTree = "<group>"; };
 		991CEC0729999ECD0095F025 /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
 		9953C05429A40AC700247C5B /* BoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				9953C05629A422C200247C5B /* WordGenerator.swift */,
 				991CEC0529999E2A0095F025 /* KeyboardCell.swift */,
 				991CEC0729999ECD0095F025 /* KeyboardController.swift */,
+				048D889F2B3D13EA0045854A /* SettingsViewController.swift */,
 				99CF2AA929B0172800B4973F /* BoardController+Extensions.swift */,
 				99CF2AAB29B0198D00B4973F /* ViewController+Extensions.swift */,
 				99CF2AA529B0157B00B4973F /* KeyboardController+Extensions.swift */,
@@ -303,6 +306,7 @@
 				99CF2AA829B0168700B4973F /* Constants.swift in Sources */,
 				991CEC0629999E2A0095F025 /* KeyboardCell.swift in Sources */,
 				996B84AA299990A900133037 /* SceneDelegate.swift in Sources */,
+				048D88A02B3D13EA0045854A /* SettingsViewController.swift in Sources */,
 				99CF2AA629B0157B00B4973F /* KeyboardController+Extensions.swift in Sources */,
 				996B84D8299994A300133037 /* LetterCell.swift in Sources */,
 			);
